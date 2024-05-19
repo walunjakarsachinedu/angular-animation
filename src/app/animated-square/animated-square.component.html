@@ -1,1 +1,17 @@
 <div class="title">Learn Angular Animation</div>
+
+
+<br><br><br><br><br>
+
+<div class="center-h">
+  <div class="animation-info">open/close trigger -> </div>
+  <div 
+    [@openClose]="isOpen ? 'open': 'closed'" 
+    class="open-close-animated-box"  
+    (click)="toggle()">
+      animated box with open/close animation
+      <br><br><br>
+      more content...
+  </div>
+</div>
+
