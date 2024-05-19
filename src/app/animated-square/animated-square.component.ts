@@ -22,10 +22,7 @@ import {
       state('closed', style({
         height: '40px',
       })),
-      transition('open => closed', [
-        animate('.3s 0s ease')
-      ]),
-      transition('closed => open', [
+      transition('open => closed, closed => open', [
         animate('.3s 0s ease')
       ]),
     ]),
