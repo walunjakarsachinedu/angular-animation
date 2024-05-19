@@ -1,1 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap');
+
+
+:root {
+  --primary-color: #219ebc;
+  --secondary-color: #023047;
+  --font-family: 'Instrument Sans';
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
