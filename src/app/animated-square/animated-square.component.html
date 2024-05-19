@@ -6,7 +6,7 @@
 <div class="center-h">
   <div class="animation-info">open/close trigger -> </div>
   <div 
-    class="open-close-animated-box">
+    class="card">
       <div (click)="toggle()" style="cursor: pointer;">
         animated box with open/close animation
       </div>
@@ -19,3 +19,20 @@
   </div>
 </div>
 
+<br><br><br><br><br>
+
+<div class="center-h">
+  <div class="animation-info">void state trigger -> </div>
+  <div 
+    class="card">
+      <div (click)="togglePresence()" style="cursor: pointer;">
+        animated box with void state animation
+      </div>
+      <div 
+        style="margin: 0px;"
+        @presence *ngIf="isPresent">
+          <br> <hr> <br>
+          more content...
+      </div>
+  </div>
+</div>
