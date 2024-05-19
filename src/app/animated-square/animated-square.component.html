@@ -6,12 +6,16 @@
 <div class="center-h">
   <div class="animation-info">open/close trigger -> </div>
   <div 
-    [@openClose]="isOpen ? 'open': 'closed'" 
-    class="open-close-animated-box"  
-    (click)="toggle()">
-      animated box with open/close animation
-      <br><br><br>
-      more content...
+    class="open-close-animated-box">
+      <div (click)="toggle()" style="cursor: pointer;">
+        animated box with open/close animation
+      </div>
+      <div 
+        style="margin: 0px;"
+        [@openClose]="isOpen ? 'open': 'closed'">
+          <br> <hr> <br>
+          more content...
+      </div>
   </div>
 </div>
 

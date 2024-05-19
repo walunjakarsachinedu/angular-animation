@@ -17,10 +17,12 @@ import {
   animations: [
     trigger("openClose", [
       state('open', style({
-        height: '100px',
+        height: '*',
+        opacity: 1,
       })),
       state('closed', style({
-        height: '40px',
+        height: '0px',
+        opacity: 0,
       })),
       transition('open => closed, closed => open', [
         animate('.3s 0s ease')
