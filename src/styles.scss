@@ -37,3 +37,23 @@ body {
 }
 
 
+hr {
+  border: 0.9px solid #03045e;
+  margin: 0px !important;
+}
+
+
+
+.user-select-none {
+  user-select: none; 
+    -webkit-user-select: none; 
+    -ms-user-select: none; 
+}
+
+.p-20 {
+  padding: 20px;
+}
+
+.width-150 {
+  width: 100px;
+}

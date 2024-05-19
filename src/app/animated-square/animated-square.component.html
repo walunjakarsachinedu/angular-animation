@@ -4,17 +4,18 @@
 <br><br><br><br><br>
 
 <div class="center-h">
-  <div class="animation-info">open/close trigger -> </div>
+  <div class="animation-info width-150">open/close trigger -> </div>
   <div 
     class="card">
-      <div (click)="toggle()" style="cursor: pointer;">
+      <div (click)="toggle()" style="cursor: pointer;" class="p-20">
         animated box with open/close animation
       </div>
       <div 
-        style="margin: 0px;"
         [@openClose]="isOpen ? 'open': 'closed'">
-          <br> <hr> <br>
-          more content...
+          <hr> 
+          <div class="p-20">
+            The animation brought the story to life, with characters leaping off the screen in vivid detail. Each frame was a masterpiece, capturing the magic and emotion of every scene.
+          </div>
       </div>
   </div>
 </div>
@@ -22,17 +23,20 @@
 <br><br><br><br><br>
 
 <div class="center-h">
-  <div class="animation-info">void state trigger -> </div>
+  <div class="animation-info width-150">existance void state trigger -> </div>
   <div 
     class="card">
-      <div (click)="togglePresence()" style="cursor: pointer;">
-        animated box with void state animation
+      <div (click)="togglePresence()" style="cursor: pointer;" class="p-20">
+        animated box with presence/absence element in dom animation
       </div>
       <div 
-        style="margin: 0px;"
         @presence *ngIf="isPresent">
-          <br> <hr> <br>
-          more content...
+          <hr> 
+          <div class="p-20">
+            The animation brought the story to life, with characters leaping off the screen in vivid detail. Each frame was a masterpiece, capturing the magic and emotion of every scene.
+          </div>
       </div>
   </div>
 </div>
+
+<br><br>
