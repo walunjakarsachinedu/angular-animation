@@ -5,10 +5,10 @@
 
 :root {
   --primary-color: #219ebc;
+  --light-primary-color: #90e0ef;
   --secondary-color: #023047;
   --font-family: 'Instrument Sans';
-  --text-selection-background-color: #caf0f8;
-  --text-selection-color: #03045e;
+  --selection-background-color: #caf0f8;
 }
 
 
@@ -21,8 +21,8 @@ body {
 
 
 ::selection {
-  background-color: var(--text-selection-background-color);
-  color: var(--text-selection-color);
+  background-color: var(--selection-background-color);
+  color: var(--secondary-color);
 }
 
 .center-h {
@@ -38,10 +38,9 @@ body {
 
 
 hr {
-  border: 0.9px solid #03045e;
+  border: 0.9px solid var(--secondary-color);
   margin: 0px !important;
 }
-
 
 
 .user-select-none {
