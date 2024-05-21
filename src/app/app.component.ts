@@ -4,11 +4,14 @@ import { RouterOutlet } from '@angular/router';
 import { AnimatedSquareComponent } from './animated-square/animated-square.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { CommonModule } from '@angular/common';
+import { DropdownComponent } from './dropdown/dropdown.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
+  providers: [],
   imports: [
+    DropdownComponent,
     RouterOutlet,
     AnimatedSquareComponent,
   ],
@@ -16,5 +19,10 @@ import { CommonModule } from '@angular/common';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'angular-animation';
+  themes = ["blue", "green"];
+
+  setTheme(theme: string) {
+    document.documentElement.setAttribute('data-theme', theme);
+    document.documentElement.setAttribute('data-theme', theme);
+  }
 }

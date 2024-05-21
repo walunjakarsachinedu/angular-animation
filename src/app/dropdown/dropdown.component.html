@@ -1,0 +1,9 @@
+<div class="dropdown-header user-select-none" (click)="isDropdownOpen = !isDropdownOpen">
+  <div>{{selected}}</div>
+  <i [@rotatedUnRotated]="isDropdownOpen ? 'rotated': 'unrotated'" class="material-icons">arrow_drop_down</i>
+</div>
+<div [@showHide]="isDropdownOpen ? 'show' : 'hide'">
+  <ng-container *ngFor="let item of items">
+    <div class="dropdown-item user-select-none" (click)="selectItem(item)">{{item}}</div>
+  </ng-container>
+</div>

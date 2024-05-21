@@ -1,0 +1,32 @@
+:host {
+  position: absolute;
+  right: 16px;
+  top: 16px;
+  background-color: var(--light-primary-color) !important;
+  border-radius: 4px;
+  cursor: pointer;
+  overflow: hidden;
+  width: 8ch;
+}
+
+.material-icons {
+  margin-left: 8px;
+  font-size: 16px;
+}
+
+.dropdown-header {
+  padding: 4px 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dropdown-item {
+  padding: 4px;
+  padding-left: 8px;
+  // text-align: center;
+}
+
+.dropdown-item:hover {
+  background-color: var(--selection-background-color);
+}

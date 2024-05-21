@@ -1,3 +1,5 @@
 <router-outlet />
 
 <app-animated-square></app-animated-square>
+
+<app-dropdown [items]="themes" (onItemSelect)="setTheme($event)"></app-dropdown>
